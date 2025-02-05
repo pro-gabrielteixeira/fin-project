@@ -2,6 +2,7 @@ package com.personal.fin_project.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
@@ -9,10 +10,10 @@ import reactor.core.publisher.Mono;
 public class ApiConfigService {
 
     @Autowired
-    private WebClient webClient;
+    private RestTemplate restTemplate;
 
-    public Mono<String> getBitcoinPrice() {
+    public String getBitcoinPrice() {
         String url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true&precision=2";
-        return webClient.get().uri(url).retrieve().bodyToMono(String.class);
+        return restTemplate.getForObject(url, String.class);
     }
 }

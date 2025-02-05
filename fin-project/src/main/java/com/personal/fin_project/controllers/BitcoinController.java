@@ -1,5 +1,7 @@
 package com.personal.fin_project.controllers;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.personal.fin_project.services.ApiConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +17,7 @@ public class BitcoinController {
     private ApiConfigService apiConfigService;
 
     @GetMapping("/price")
-    public Mono<String> getPrice() {
+    public String getPrice() {
         return apiConfigService.getBitcoinPrice();
     }
 }
