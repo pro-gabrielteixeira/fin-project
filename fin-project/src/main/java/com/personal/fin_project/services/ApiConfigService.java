@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.personal.fin_project.entities.BitcoinPriceEntity;
+import com.personal.fin_project.repositories.BitcoinPriceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -16,6 +17,9 @@ public class ApiConfigService {
 
     @Autowired
     private RestTemplate restTemplate;
+
+    @Autowired
+    private BitcoinPriceRepository bitcoinPriceRepository;
 
     public String getBitcoinPrice() {
         String url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true&precision=2";
@@ -31,7 +35,9 @@ public class ApiConfigService {
 
             BitcoinPriceEntity bitcoinPriceEntity = new BitcoinPriceEntity(price, last24HoursChange, timeStamp);
 
-            System.out.println(bitcoinPriceEntity);
+            if (bitcoinPriceRepository.findByTimeStamp(bitcoinPriceEntity.getTimeStamp()).isEmpty()){
+                bitcoinPriceRepository.save(bitcoinPriceEntity);
+            }
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
