@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface BitcoinPriceRepository extends JpaRepository<BitcoinPriceEntity, Long> {
-    Optional<BitcoinPriceEntity> findByTimeStamp(Long timeStamp);
+    Optional<BitcoinPriceEntity> findByTimestamp(Long timeStamp);
 }

@@ -10,7 +10,7 @@ import java.util.Objects;
 public class BitcoinPriceEntity {
     private Double price;
     private Double last24HoursChange;
-    private Long timeStamp;
+    private Long timestamp;
 
     private final LocalDateTime createdAt = LocalDateTime.now();
 
@@ -21,10 +21,10 @@ public class BitcoinPriceEntity {
     public BitcoinPriceEntity() {
     }
 
-    public BitcoinPriceEntity(Double price, Double last24HoursChange, Long timeStamp) {
+    public BitcoinPriceEntity(Double price, Double last24HoursChange, Long timestamp) {
         this.price = price;
         this.last24HoursChange = last24HoursChange;
-        this.timeStamp = timeStamp;
+        this.timestamp = timestamp;
     }
 
     public LocalDateTime getCreatedAt() {
@@ -47,12 +47,12 @@ public class BitcoinPriceEntity {
         this.last24HoursChange = last24HoursChange;
     }
 
-    public Long getTimeStamp() {
-        return timeStamp;
+    public Long getTimestamp() {
+        return timestamp;
     }
 
-    public void setTimeStamp(Long timeStamp) {
-        this.timeStamp = timeStamp;
+    public void setTimestamp(Long timestamp) {
+        this.timestamp = timestamp;
     }
 
     @Override
@@ -72,7 +72,7 @@ public class BitcoinPriceEntity {
         return "BitcoinPriceEntity{" +
                 "price=" + price +
                 ", last24HoursChange=" + last24HoursChange +
-                ", timeStamp=" + timeStamp +
+                ", timestamp=" + timestamp +
                 ", createdAt=" + createdAt +
                 ", id=" + id +
                 '}';
