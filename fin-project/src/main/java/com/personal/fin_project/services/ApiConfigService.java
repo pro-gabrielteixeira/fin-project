@@ -10,6 +10,7 @@ import com.personal.fin_project.entities.BitcoinPriceEntity;
 import com.personal.fin_project.repositories.BitcoinFearAndGreedRepository;
 import com.personal.fin_project.repositories.BitcoinPriceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -77,6 +78,7 @@ public class ApiConfigService {
         }
     }
 
+    @Scheduled (cron = "0 5 0 * * *")
     public BitcoinDTO getBitcoin() {
         BitcoinFearAndGreedEntity btcFng= getBitcoinFearAndGeed();
         BitcoinPriceEntity btcPrice = getBitcoinPrice();
