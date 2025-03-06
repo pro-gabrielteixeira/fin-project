@@ -109,8 +109,8 @@ Ideal for investors and enthusiasts looking for **quick and reliable insights**.
 
 The project progress is managed directly on GitHub. To check the current task status, please refer to:
 
-- **Milestones:** [View Milestones](https://github.com/seu-usuario/fin-project/milestones)
-- **Project Board:** [View Project Board](https://github.com/seu-usuario/fin-project/projects)
+- **Milestones:** [View Milestones](https://github.com/pro-gabrielteixeira/fin-project/milestones)
+- **Project Board:** [View Project Board](https://github.com/pro-gabrielteixeira/fin-project/projects)
 
 The issues are organized into the following phases:
 - **Milestone 1:** Integration with APIs and Backend
