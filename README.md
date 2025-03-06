@@ -92,7 +92,7 @@ Ideal for investors and enthusiasts looking for **quick and reliable insights**.
 
 ### 🗺️ Full Application Flow
 
-1️⃣ Frontend makes a request to the backend (GET `/indicators/bitcoin`).  
+1️⃣ Frontend makes a request to the backend (GET `/`).  
 2️⃣ Backend fetches data from external sources (CoinGecko, Alternative.me, etc.).  
 3️⃣ Backend processes, interprets, and responds with consolidated JSON.  
 4️⃣ Frontend displays data in cards, charts, and/or tables, with friendly interpretations.  
