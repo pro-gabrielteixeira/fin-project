@@ -57,7 +57,8 @@ Ideal para investidores e entusiastas que querem **insights rápidos e confiáve
         "valor": 2.2,
         "interpretacao": "Acima da média histórica - Bitcoin pode estar sobrevalorizado"
     }
-}```
+}
+```
 
 ## 🔗 Endpoints Planejados
 
