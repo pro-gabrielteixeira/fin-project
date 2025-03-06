@@ -1,106 +1,107 @@
 # 📊 Bitcoin Indicators App
 
-Projeto fullstack composto por:
+Fullstack project composed of:
 
-✅ **Backend:** API REST desenvolvida em **Java + Spring Boot**, focada em buscar e interpretar indicadores essenciais para o mercado de Bitcoin, como preço atual, MVRV, Fear and Greed Index e Mayer Multiple.  
-✅ **Frontend:** Aplicação **Angular** para consumir a API e exibir os dados de forma amigável.
+✅ **Backend:** REST API developed using **Java + Spring Boot**, focused on retrieving and interpreting key indicators for the Bitcoin market, such as current price, MVRV, Fear and Greed Index, and Mayer Multiple.  
+✅ **Frontend:** **Angular** application to consume the API and display data in a user-friendly way.
 
 ---
 
-## 📌 Objetivo
+## 📌 Objective
 
-Centralizar dados de diversas fontes sobre o Bitcoin, processar essas informações e fornecer uma **interpretação clara e objetiva** para cada indicador, exibidos de forma visual e interpretativa no frontend em Angular.
+Centralize data from various sources about Bitcoin, process this information, and provide a **clear and objective interpretation** for each indicator, displayed visually and interpretatively in the Angular frontend.
 
-Ideal para investidores e entusiastas que querem **insights rápidos e confiáveis**.
+Ideal for investors and enthusiasts looking for **quick and reliable insights**.
 
 ---
 
 ## 💻 Backend - Bitcoin Indicators API
 
-### 🛠️ Tecnologias Utilizadas
+### 🛠️ Technologies Used
 
-- **Linguagem:** Java 17+
+- **Language:** Java 17+
 - **Framework:** Spring Boot 3
-- **Consumo de APIs Externas:** RestTemplate ou WebClient
-- **Documentação:** Springdoc OpenAPI (Swagger)
+- **External API Consumption:** RestTemplate or WebClient
+- **Documentation:** Springdoc OpenAPI (Swagger)
 - **Logs:** Logback
-- **Testes:** JUnit 5 + Mockito
-- **Gerenciamento de Dependências:** Maven
+- **Testing:** JUnit 5 + Mockito
+- **Dependency Management:** Maven
 
 ---
 
-### 📈 Funcionalidades
+### 📈 Features
 
-✅ Consulta do preço atual do Bitcoin  
-✅ Recuperação de indicadores relevantes (MVRV, Fear and Greed Index, Mayer Multiple)  
-✅ Normalização e tratamento de dados de múltiplas fontes  
-✅ Análise interpretativa com explicação simplificada de cada indicador  
-✅ Exposição via endpoints REST  
-✅ Documentação automática com Swagger (OpenAPI)
+✅ Fetch current Bitcoin price  
+✅ Retrieve relevant indicators (MVRV, Fear and Greed Index, Mayer Multiple)  
+✅ Normalize and process data from multiple sources  
+✅ Interpret and explain each indicator in a simplified way  
+✅ Expose data via REST endpoints  
+✅ Automatic documentation with Swagger (OpenAPI)
 
 ---
 
-### 📊 Exemplo de Resposta da API
+### 📊 Example API Response
 
 ```json
 {
-    "precoAtual": 63000,
+    "bitcoinPrice": 63000,
     "mvrv": {
-        "valor": 2.8,
-        "interpretacao": "Neutro - Bitcoin está próximo de seu valor justo"
+        "value": 2.8,
+        "interpretation": "Neutral - Bitcoin is close to its fair value"
     },
     "fearAndGreedIndex": {
-        "valor": 72,
-        "interpretacao": "Ganância - Mercado otimista, possível sinal de alta especulativa"
+        "value": 72,
+        "interpretation": "Greed - Optimistic market, possible sign of speculative bubble"
     },
     "mayerMultiple": {
-        "valor": 2.2,
-        "interpretacao": "Acima da média histórica - Bitcoin pode estar sobrevalorizado"
+        "value": 2.2,
+        "interpretation": "Above historical average - Bitcoin may be overvalued"
     }
 }
 ```
 
-## 🔗 Endpoints Planejados
+## 🔗 Planned Endpoints
 
-| Método | Endpoint               | Descrição                                 |
+| Method | Endpoint               | Description                        |
 |---|---|---|
-| GET   | `/indicators/bitcoin` | Retorna dados e análises sobre o Bitcoin |
+| GET   | `/` | Returns Bitcoin data and analysis |
 
 ---
 
 ## 🌐 Frontend - Bitcoin Indicators Dashboard
 
-### 🛠️ Tecnologias
+### 🛠️ Technologies Used
 
 - Angular 17+
 - Typescript
-- Bootstrap ou Angular Material (opcional)
-- Consumo de API via HttpClient
-- Gráficos com Chart.js (ou outra biblioteca)
-- Deploy no GitHub Pages (ou outra plataforma gratuita)
+- Bootstrap or Angular Material (optional)
+- API consumption via HttpClient
+- Charts with Chart.js (or another library)
+- Deployment via GitHub Pages (or another free platform)
 
 ---
 
-### 📋 Funcionalidades
+### 📋 Features
 
-✅ Tela principal com resumo dos indicadores  
-✅ Botão para atualizar dados em tempo real  
-✅ Exibição dos indicadores em cards ou gráficos  
-✅ Explicação interpretada para cada métrica
-
----
-
-### 🗺️ Fluxo Completo da Aplicação
-
-1️⃣ Frontend faz requisição para o backend (GET `/indicators/bitcoin`).  
-2️⃣ Backend busca dados de fontes externas (CoinGecko, Alternative.me, etc).  
-3️⃣ Backend trata, interpreta e responde com JSON consolidado.  
-4️⃣ Frontend exibe os dados em cards, gráficos e/ou tabelas, com interpretações amigáveis.
+✅ Main screen showing a summary of indicators  
+✅ Button to refresh data in real-time  
+✅ Display indicators in cards or charts  
+✅ Easy-to-understand interpretation for each metric  
 
 ---
 
-### ✨ Diferenciais
+### 🗺️ Full Application Flow
 
-✅ Dados centralizados em uma só API  
-✅ Interpretação simplificada para facilitar decisões rápidas  
-✅ Ideal para dashboards, alertas ou notificações
+1️⃣ Frontend makes a request to the backend (GET `/indicators/bitcoin`).  
+2️⃣ Backend fetches data from external sources (CoinGecko, Alternative.me, etc.).  
+3️⃣ Backend processes, interprets, and responds with consolidated JSON.  
+4️⃣ Frontend displays data in cards, charts, and/or tables, with friendly interpretations.  
+
+---
+
+### ✨ Key Differentials
+
+✅ Centralized data in a single API  
+✅ Simplified interpretation to support quick decision-making  
+✅ Ideal for dashboards, alerts, or notifications  
+
