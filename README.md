@@ -105,14 +105,14 @@ Ideal for investors and enthusiasts looking for **quick and reliable insights**.
 ✅ Simplified interpretation to support quick decision-making  
 ✅ Ideal for dashboards, alerts, or notifications  
 
-## 📊 Acompanhamento do Progresso no GitHub
+## 📊 Project Progress Tracking on GitHub
 
-O progresso do projeto está sendo gerido diretamente no GitHub. Para ver o status atual das tarefas, consulte:
+The project progress is managed directly on GitHub. To check the current task status, please refer to:
 
-- **Milestones:** [Ver Milestones](https://github.com/seu-usuario/fin-project/milestones)
-- **Project Board:** [Ver Project Board](https://github.com/seu-usuario/fin-project/projects)
+- **Milestones:** [View Milestones](https://github.com/seu-usuario/fin-project/milestones)
+- **Project Board:** [View Project Board](https://github.com/seu-usuario/fin-project/projects)
 
-As issues estão sendo organizadas de acordo com as seguintes fases:
-- **Milestone 1:** Integração com APIs e Backend
-- **Milestone 2:** Desenvolvimento do Frontend
-- **Milestone 3:** Ajustes Finais e Deploy
+The issues are organized into the following phases:
+- **Milestone 1:** Integration with APIs and Backend
+- **Milestone 2:** Frontend Development
+- **Milestone 3:** Final Adjustments and Deploy
