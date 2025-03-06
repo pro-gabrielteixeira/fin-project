@@ -105,3 +105,14 @@ Ideal for investors and enthusiasts looking for **quick and reliable insights**.
 ✅ Simplified interpretation to support quick decision-making  
 ✅ Ideal for dashboards, alerts, or notifications  
 
+## 📊 Acompanhamento do Progresso no GitHub
+
+O progresso do projeto está sendo gerido diretamente no GitHub. Para ver o status atual das tarefas, consulte:
+
+- **Milestones:** [Ver Milestones](https://github.com/seu-usuario/fin-project/milestones)
+- **Project Board:** [Ver Project Board](https://github.com/seu-usuario/fin-project/projects)
+
+As issues estão sendo organizadas de acordo com as seguintes fases:
+- **Milestone 1:** Integração com APIs e Backend
+- **Milestone 2:** Desenvolvimento do Frontend
+- **Milestone 3:** Ajustes Finais e Deploy
