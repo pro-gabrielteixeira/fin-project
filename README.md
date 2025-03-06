@@ -57,43 +57,49 @@ Ideal para investidores e entusiastas que querem **insights rápidos e confiáve
         "valor": 2.2,
         "interpretacao": "Acima da média histórica - Bitcoin pode estar sobrevalorizado"
     }
-}
+}```
 
+## 🔗 Endpoints Planejados
 
-🔗 Endpoints Planejados
-Método
-GET
+| Método | Endpoint               | Descrição                                 |
+|---|---|---|
+| GET   | `/indicators/bitcoin` | Retorna dados e análises sobre o Bitcoin |
 
-Endpoint
-/
+---
 
-Descrição
-Retorna dados e análises sobre o Bitcoin
+## 🌐 Frontend - Bitcoin Indicators Dashboard
 
+### 🛠️ Tecnologias
 
-🌐 Frontend - Bitcoin Indicators Dashboard
+- Angular 17+
+- Typescript
+- Bootstrap ou Angular Material (opcional)
+- Consumo de API via HttpClient
+- Gráficos com Chart.js (ou outra biblioteca)
+- Deploy no GitHub Pages (ou outra plataforma gratuita)
 
-🛠️ Tecnologias
-Angular 17+
-Typescript
-Bootstrap ou Angular Material (opcional)
-Consumo de API via HttpClient
-Gráficos com Chart.js (ou outra lib gráfica)
-Deploy no GitHub Pages (ou outra plataforma gratuita)
+---
 
-📋 Funcionalidades
-✅ Tela principal com resumo dos indicadores
-✅ Botão para atualizar dados em tempo real
-✅ Exibição dos indicadores em cards ou gráficos
+### 📋 Funcionalidades
+
+✅ Tela principal com resumo dos indicadores  
+✅ Botão para atualizar dados em tempo real  
+✅ Exibição dos indicadores em cards ou gráficos  
 ✅ Explicação interpretada para cada métrica
 
-🗺️ Fluxo Completo da Aplicação
-1️⃣ Frontend faz requisição para o backend (GET /).
-2️⃣ Backend busca dados de fontes externas (CoinGecko, Alternative.me, etc).
-3️⃣ Backend trata, interpreta e responde com JSON consolidado.
+---
+
+### 🗺️ Fluxo Completo da Aplicação
+
+1️⃣ Frontend faz requisição para o backend (GET `/indicators/bitcoin`).  
+2️⃣ Backend busca dados de fontes externas (CoinGecko, Alternative.me, etc).  
+3️⃣ Backend trata, interpreta e responde com JSON consolidado.  
 4️⃣ Frontend exibe os dados em cards, gráficos e/ou tabelas, com interpretações amigáveis.
 
-✨ Diferenciais
-✅ Dados centralizados em uma só API
-✅ Interpretação simplificada para facilitar decisões rápidas
+---
+
+### ✨ Diferenciais
+
+✅ Dados centralizados em uma só API  
+✅ Interpretação simplificada para facilitar decisões rápidas  
 ✅ Ideal para dashboards, alertas ou notificações
